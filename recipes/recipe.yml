@@ -30,6 +30,7 @@ modules:
       - konsole
       - lsd
       - neovim
+      - python3-neovim
       - ripgrep
       - syncthing
       - thefuck
