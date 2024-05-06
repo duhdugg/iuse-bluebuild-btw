@@ -28,6 +28,7 @@ modules:
       - fuzzel
       - git-delta
       - konsole
+      - libpq-devel
       - lsd
       - neovim
       - python3-neovim
