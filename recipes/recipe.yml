@@ -41,6 +41,8 @@ modules:
       - cockpit-selinux
       - cockpit-ostree
       - cockpit-podman
+      # I dont need tailscale
+      - tailscale
   - type: default-flatpaks
     notify: true
     system:
