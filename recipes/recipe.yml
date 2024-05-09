@@ -31,6 +31,16 @@ modules:
       # remove setroubleshoot stuff (high CPU problems)
       - setroubleshoot-plugins
       - setroubleshoot-server
+      # remove all the cockpit packages
+      - cockpit-bridge
+      - cockpit-system
+      - cockpit-storaged
+      - cockpit-machines
+      - cockpit-pcp
+      - cockpit-networkmanager
+      - cockpit-selinux
+      - cockpit-ostree
+      - cockpit-podman
   - type: default-flatpaks
     notify: true
     system:
