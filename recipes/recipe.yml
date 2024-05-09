@@ -28,6 +28,9 @@ modules:
       - zsh-autosuggestions
       - zsh-syntax-highlighting
     remove:
+      # remove setroubleshoot stuff (high CPU problems)
+      - setroubleshoot-plugins
+      - setroubleshoot-server
   - type: default-flatpaks
     notify: true
     system:
