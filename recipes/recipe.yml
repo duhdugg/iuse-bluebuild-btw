@@ -28,7 +28,6 @@ modules:
       - fuzzel
       - git-delta
       - konsole
-      - lsd
       - neovim
       - python3-neovim
       - ripgrep
