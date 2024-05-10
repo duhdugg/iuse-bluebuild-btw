@@ -18,6 +18,7 @@ modules:
       - fd-find
       - fuzzel
       - git-delta
+      - golang
       - konsole
       - neovim
       - python3-neovim
