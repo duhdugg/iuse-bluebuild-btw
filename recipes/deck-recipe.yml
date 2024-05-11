@@ -1,6 +1,6 @@
 name: ideck-bluebuild-btw
 description: just one geek's experiment with blue-build on the steam deck
-base-image: ghcr.io/ublue-os/bazzite
+base-image: ghcr.io/ublue-os/bazzite-deck
 image-version: 40
 modules:
   - type: files
