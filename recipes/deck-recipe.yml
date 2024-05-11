@@ -1,0 +1,67 @@
+name: ideck-bluebuild-btw
+description: just one geek's experiment with blue-build on the steam deck
+base-image: ghcr.io/ublue-os/bazzite
+image-version: 40
+modules:
+  - type: files
+    files:
+      - usr: /usr # copies config/files/usr into your image's /usr.
+                  # put configuration files you want in /etc/ on a booted system
+                  # in /usr/etc/ in the image. read more in files module reference.
+  - type: rpm-ostree
+    repos:
+    install:
+      - bat
+      - borgbackup
+      - cowsay
+      - duf
+      - fd-find
+      - fuzzel
+      # - git-delta
+      - golang
+      - htop
+      - httpie
+      - iftop
+      - konsole
+      - neovim
+      - pwgen
+      - python3-neovim
+      - ripgrep
+      - syncthing
+      - thefuck
+      - tldr
+      # - yarnpkg
+      # - zsh-autosuggestions
+      # - zsh-syntax-highlighting
+    remove:
+      # remove setroubleshoot stuff (high CPU problems)
+      # - setroubleshoot-plugins
+      # - setroubleshoot-server
+      # remove all the cockpit packages
+      # - cockpit-bridge
+      # - cockpit-system
+      # - cockpit-storaged
+      # - cockpit-machines
+      # - cockpit-pcp
+      # - cockpit-networkmanager
+      # - cockpit-selinux
+      # - cockpit-ostree
+      # - cockpit-podman
+      # I dont need tailscale
+      # - tailscale
+  - type: default-flatpaks
+    notify: true
+    system:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub"
+      install:
+        - com.brave.Browser
+        - com.google.Chrome
+        - com.microsoft.Edge
+        - com.obsproject.Studio
+        - io.github.ungoogled_software.ungoogled_chromium
+        - org.chromium.Chromium
+        - org.mozilla.firefox
+      remove:
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
