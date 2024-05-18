@@ -15,6 +15,7 @@ modules:
       - borgbackup
       - cowsay
       - duf
+      - eza
       - fd-find
       - fuzzel
       - git-delta
