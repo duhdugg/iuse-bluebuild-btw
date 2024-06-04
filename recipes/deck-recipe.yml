@@ -14,10 +14,10 @@ modules:
       - bat
       - borgbackup
       - cowsay
+      - cronie
       - duf
       - fd-find
       - fuzzel
-      # - git-delta
       - golang
       - htop
       - httpie
@@ -30,25 +30,7 @@ modules:
       - syncthing
       - thefuck
       - tldr
-      # - yarnpkg
-      # - zsh-autosuggestions
-      # - zsh-syntax-highlighting
     remove:
-      # remove setroubleshoot stuff (high CPU problems)
-      # - setroubleshoot-plugins
-      # - setroubleshoot-server
-      # remove all the cockpit packages
-      # - cockpit-bridge
-      # - cockpit-system
-      # - cockpit-storaged
-      # - cockpit-machines
-      # - cockpit-pcp
-      # - cockpit-networkmanager
-      # - cockpit-selinux
-      # - cockpit-ostree
-      # - cockpit-podman
-      # I dont need tailscale
-      # - tailscale
   - type: default-flatpaks
     notify: true
     system:

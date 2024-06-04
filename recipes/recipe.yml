@@ -14,6 +14,7 @@ modules:
       - bat
       - borgbackup
       - cowsay
+      - cronie
       - duf
       - eza
       - fd-find
