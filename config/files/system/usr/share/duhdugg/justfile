@@ -1,0 +1,9 @@
+fix-cron:
+  #!/usr/bin/env bash
+  set -ex
+  if [ -z "${CONTAINER_ID}" ]; then
+    sudo restorecon -Rv /var/spool/cron
+    sudo systemctl restart crond
+  else
+    distrobox-host-exec uhjust fix-cron
+  fi
