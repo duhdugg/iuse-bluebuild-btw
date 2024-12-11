@@ -8,7 +8,7 @@ modules:
       - source: system
         destination: /
   - type: rpm-ostree
-    repos:
+    repos: []
     install:
       - bat
       - borgbackup
@@ -33,7 +33,7 @@ modules:
       - yarnpkg
       - zsh-autosuggestions
       - zsh-syntax-highlighting
-    remove:
+    remove: []
   - type: default-flatpaks
     notify: true
     system:
@@ -50,5 +50,5 @@ modules:
         - org.libreoffice.LibreOffice
         - org.mozilla.firefox
         - org.sqlitebrowser.sqlitebrowser
-      remove:
+      remove: []
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
