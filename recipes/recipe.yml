@@ -1,7 +1,7 @@
 name: iuse-bluebuild-btw
 description: just one geek's experiment with blue-build
 base-image: ghcr.io/ublue-os/aurora-dx
-image-version: 41
+image-version: 42
 modules:
   - type: files
     files:
