@@ -31,18 +31,19 @@ modules:
       - tldr
     remove: []
   - type: default-flatpaks
-    notify: true
-    system:
-      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      repo-name: flathub
-      repo-title: "Flathub"
-      install:
-        - com.brave.Browser
-        - com.google.Chrome
-        - com.microsoft.Edge
-        - com.obsproject.Studio
-        - io.github.ungoogled_software.ungoogled_chromium
-        - org.chromium.Chromium
-        - org.mozilla.firefox
-      remove: []
+    configurations:
+      - notify: true
+        scope: system
+        repo:
+          url: https://dl.flathub.org/repo/flathub.flatpakrepo
+          name: flathub
+          title: "Flathub"
+        install:
+          - com.brave.Browser
+          - com.google.Chrome
+          - com.microsoft.Edge
+          - com.obsproject.Studio
+          - io.github.ungoogled_software.ungoogled_chromium
+          - org.chromium.Chromium
+          - org.mozilla.firefox
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
