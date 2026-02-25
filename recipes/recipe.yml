@@ -39,6 +39,7 @@ modules:
       - yarnpkg
       - zsh-autosuggestions
       - zsh-syntax-highlighting
+      - zoxide
     remove: []
   - type: default-flatpaks
     configurations:
