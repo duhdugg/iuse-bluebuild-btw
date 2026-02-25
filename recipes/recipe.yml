@@ -10,8 +10,12 @@ modules:
   - type: rpm-ostree
     repos: []
     install:
+      - atuin
+      - awscli2
       - bat
       - borgbackup
+      - btop
+      - caddy
       - cowsay
       - cronie
       - duf
@@ -22,12 +26,15 @@ modules:
       - httpie
       - iftop
       - konsole
+      - lsd
       - neovim
+      - postgresql16
       - pwgen
       - python3-neovim
       - ripgrep
       - syncthing
       - thefuck
+      - typescript
       - tldr
       - yarnpkg
       - zsh-autosuggestions
