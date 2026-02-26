@@ -27,6 +27,7 @@ modules:
       - iftop
       - konsole
       - lsd
+      - mpv
       - neovim
       - postgresql16
       - pwgen
@@ -36,6 +37,7 @@ modules:
       - thefuck
       - typescript
       - tldr
+      - vlc
       - yarnpkg
       - zsh-autosuggestions
       - zsh-syntax-highlighting
